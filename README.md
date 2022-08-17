@@ -2,7 +2,11 @@
 # AI/ML conference paper review 
 
 
-## ICML 2022
+
+
+
+
+## ICML & ICLR 2022
 
 
 ### ✅  UQ，AD，OOD， Robustness
@@ -180,6 +184,40 @@
 > 有code，有example，是autonoous system 的有点意思！
 
 
+
+26. **A FINE-GRAINED ANALYSIS ON DISTRIBUTION SHIFT** [PDF](https://openreview.net/pdf?id=Dl4LetuLdyK)
+
+> 非常好的一个baseline工作，评价很高，想办法做点东西在这个基础上！ 这个领域也非常有前途我觉得 
+Robustness to distribution shifts is critical for deploying machine learning models in the real world.  
+
+
+27. **IN SEARCH OF LOST DOMAIN GENERALIZATION** [PDF](https://openreview.net/pdf?id=lQdXeXDoWtI)
+
+> 另外一个baseline的工作， 关于domain generalization 这个现在挺火的，很多人做！
+
+
+28. **BOOSTING RANDOMIZED SMOOTHING WITH VARIANCE REDUCED CLASSIFIERS** [pdf](https://openreview.net/pdf?id=mHu2vIds_-b) 
+
+> 做variance reduction 用Gaussian random smoothing 的东西，解决classifer的， 比较ensemble的
+
+
+29. **AUTOREGRESSIVE QUANTILE FLOWS FOR PREDICTIVE UNCERTAINTY ESTIMATION** [pdf](https://openreview.net/pdf?id=z1-I6rOKv1S)
+
+> 这个paper看不太懂，不知道写的啥，做了好几个任务，包括time series forecasting啥的
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ### ✅ Causal inference 
 
 1.  **Causal Conceptions of Fairness and their Consequences** -[Oral] [PDF](https://proceedings.mlr.press/v162/nilforoshan22a.html) 
@@ -200,7 +238,10 @@
 > The fundamental challenge of drawing causal inference is that counterfactual outcomes are not fully observed for any unit. Furthermore, in observational studies, treatment assignment is likely to be confounded. Many statistical methods have emerged for causal inference under unconfoundedness conditions given pre-treatment covariates, including propensity score-based methods, prognostic score-based methods, and doubly robust methods. Unfortunately for applied researchers, there is no ‘one-size-fits-all’ causal method that can perform optimally universally. In practice, causal methods are primarily evaluated quantitatively on handcrafted simulated data. Such data-generative procedures can be of limited value because they are typically stylized models of reality. They are simplified for tractability and lack the complexities of real-world data. For applied researchers, it is critical to understand how well a method performs for the data at hand. Our work introduces a deep generative model-based framework, Credence, to validate causal inference methods. The framework’s novelty stems from its ability to generate synthetic data anchored at the empirical distribution for the observed sample, and therefore virtually indistinguishable from the latter. The approach allows the user to specify ground truth for the form and magnitude of causal effects and confounding bias as functions of covariates. Thus simulated data sets are used to evaluate the potential performance of various causal estimation methods when applied to data similar to the observed sample. We demonstrate Credence’s ability to accurately assess the relative performance of causal estimation techniques in an extensive simulation study and two real-world data applications from Lalonde and Project STAR studies.
 
 
+4. **OPTIMAL TRANSPORT FOR CAUSAL DISCOVERY** [pdf](https://openreview.net/pdf?id=qwBK94cP1y)
 
+> 比较理论，提出一个functional causal models (FCMs)
+ 
 
 ### ✅ Generative models 
 
@@ -252,6 +293,30 @@
 
 
 
+7. **ANALYTIC-DPM: AN ANALYTIC ESTIMATE OF THE OPTIMAL REVERSE VARIANCE IN DIFFUSION PROBABILISTIC MODELS** [pdf](https://openreview.net/pdf?id=0xiJLKH-ufZ)
+
+> ICLR 2022 best paper award - 提高inference的 score-based model or probabilistic diffusion models. 这个可以应用 有code
+https://github.com/baofff/Analytic-DPM 挺牛逼的，可能是score-based model 的新SOTA
+
+
+
+8. **ON PREDICTING GENERALIZATION USING GANS** [pdf](https://openreview.net/pdf?id=eW5R4Cek6y6)
+
+> 用GAN做predicting generization 这个有点意思，能不能用score-based model 去做呢？ 比如probabilistic prediction generalization 
+这个完全可以做的！ 比如用flow或者score-based去做！ 这个没有什么人搞感觉！有用啊！ 没有code现在，不过case都很简单！
+
+
+9. **SCORE-BASED GENERATIVE MODELING WITH CRITICALLY-DAMPED LANGEVIN DIFFUSION** [pdf](https://openreview.net/pdf?id=CzceR82CYc)
+
+> 做的非常solid，很牛逼，特别全面，但是现在感觉坑太深，不太好入了！做做应用还可以！
+
+10. **RESPONSIBLE DISCLOSURE OF GENERATIVE MODELS USING SCALABLE FINGERPRINTING** [pdf](https://openreview.net/pdf?id=sOK-zS6WHB)
+
+> 基于GAN的，但是比较fancy的！写的挺好的
+ 
+
+
+
 ### ✅ Multimodality (Vision, Speech, Lanuager, Graph)
 
 1. **data2vec: A General Framework for Self-supervised Learning in Speech, Vision and Language** - [Oral] [PDF](https://proceedings.mlr.press/v162/baevski22a.html)
@@ -259,6 +324,16 @@
 > While the general idea of self-supervised learning is identical across modalities, the actual algorithms and objectives differ widely because they were developed with a single modality in mind. To get us closer to general self-supervised learning, we present data2vec, a framework that uses the same learning method for either speech, NLP or computer vision. The core idea is to predict latent representations of the full input data based on a masked view of the input in a self-distillation setup using a standard Transformer architecture. Instead of predicting modality-specific targets such as words, visual tokens or units of human speech which are local in nature, data2vec predicts contextualized latent representations that contain information from the entire input. Experiments on the major benchmarks of speech recognition, image classification, and natural language understanding demonstrate a new state of the art or competitive performance to predominant approaches.
 
 > MetaAI的工作，大活，估计很多人会follow
+
+
+2. NATURAL LANGUAGE DESCRIPTIONS OF DEEP VISUAL FEATURES [PDF](https://openreview.net/pdf?id=NudBMY-tzDr)
+
+> ICLR 2022 的 oral paper. 关于语言和vision 交叉的一个work
+
+
+3. UNSUPERVISED VISION-LANGUAGE GRAMMAR INDUCTION WITH SHARED STRUCTURE MODELING [PDF](https://openreview.net/pdf?id=N0n_QyQ5lBF)
+
+> 定义新的任务，paper写的挺好的。We introduce a new task, unsupervised vision-language (VL) grammar induction. Given an image-caption pair, the goal is to extract a shared hierarchical structure for both image and language simultaneously. 
 
 
 ### ✅ Transfer learning 
@@ -314,7 +389,28 @@
 > Jian tang 那个组的工作，这方面的工作不多
 
 
+3. **NODE-GAM:NEURAL GENERALIZED ADDITIVE MODEL FOR INTERPRETABLE DEEP LEARNING** -[pdf](https://openreview.net/pdf?id=g8NJR6fCCl8)
+
+> GAM + neural 也算是增强可解释性！ paper写的挺好的，比较solid，找不出明显的问题
+
+
 ### ✅ Knowledge Graph 
+
+
+### ✅ Decision making 
+
+1. COMPARING DISTRIBUTIONS BY MEASURING DIFFERENCES THAT AFFECT DECISION MAKING [pdf](https://openreview.net/pdf?id=KB5onONJIAU)
+
+> stefano Ermon 组的工作，偏理论，解决difference between two distributions 然后应用到climate change problem 
+
+
+
+
+### ✅ NLP 
+
+1. **LANGUAGE MODELING VIA STOCHASTIC PROCESSES** [pdf](https://openreview.net/pdf?id=pMQwKL1yctf)
+
+> 用stochastic process 去model 语言， 挺solid的paper 
 
 
 
