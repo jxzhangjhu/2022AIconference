@@ -207,14 +207,23 @@ Robustness to distribution shifts is critical for deploying machine learning mod
 
 
 
+30. **SAMPLE EFFICIENT DEEP REINFORCEMENT LEARNING VIA UNCERTAINTY ESTIMATION** [pdf](https://openreview.net/pdf?id=vrW3tvDfOJQ)
+
+> sample DRL via UQ， 感觉很玄学，但是给了code，很难得！
+
+31. **UNIFYING LIKELIHOOD-FREE INFERENCE WITH BLACK-BOX OPTIMIZATION AND BEYOND** [PDF](https://openreview.net/pdf?id=1HxTO6CTkz)
+
+> 类似DOE的东西，但是讲了很多方法和对比的细节！不是很thoeretical，但是很多算法流程！
 
 
+32. **ANOMALY TRANSFORMER: TIME SERIES ANOMALY DETECTION WITH ASSOCIATION DISCREPANCY** [pdf](https://openreview.net/pdf?id=LzQQ89U1qm_)
+
+> 都用transformer做AD了
 
 
+33. **VARIATIONAL METHODS FOR SIMULATION-BASED INFERENCE** [pdf](https://openreview.net/pdf?id=kZ0UYdhqkNY)
 
-
-
-
+> 很经典的问题，但是用VI 去解决inference，不知道效果是否好很多？还是可以scalable？
 
 
 
@@ -315,6 +324,14 @@ https://github.com/baofff/Analytic-DPM 挺牛逼的，可能是score-based model
 > 基于GAN的，但是比较fancy的！写的挺好的
  
 
+11. **PROGRESSIVE DISTILLATION FOR FAST SAMPLING OF DIFFUSION MODELS** [pdf](https://openreview.net/pdf?id=TIdIXIpzhoI)
+
+> fast sampling for diffusion models. Jonathan Ho from google brain 
+
+
+12. **TACKLING THE GENERATIVE LEARNING TRILEMMA WITH DENOISING DIFFUSION GANS** [pdf](https://openreview.net/pdf?id=JprM0p-q0Co)
+
+> 现在这个diffusion model 太卷了！ 所有的baseline都要比，还是去做应用比较好！
 
 
 ### ✅ Multimodality (Vision, Speech, Lanuager, Graph)
