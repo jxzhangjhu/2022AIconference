@@ -230,6 +230,19 @@ Robustness to distribution shifts is critical for deploying machine learning mod
 > 很经典的问题，但是用VI 去解决inference，不知道效果是否好很多？还是可以scalable？
 
 
+34. **LEVERAGING UNLABELED DATA TO PREDICT OUT-OF-DISTRIBUTION PERFORMANCE** [pdf](https://openreview.net/pdf?id=o_HsiMPYh_x)
+
+> ODD 用了大量的实验
+
+35. **META LEARNING LOW RANK COVARIANCE FACTORS FOR ENERGY-BASED DETERMINISTIC UNCERTAINTY** [pdf](https://openreview.net/pdf?id=GQd7mXSPua)
+
+> 偏理论的，对比deterministic UQ 的paper
+
+
+36. **TRANSFORMERS CAN DO BAYESIAN INFERENCE** -[pdf](https://openreview.net/pdf?id=KSugKcbNf9) 
+
+> 这个非常interesting！ 这个如果有发展，的确是一个路子，还能熟悉transfomer 去做UQ， 是不是很多基础的问题都可以解决呢？
+
 
 ### ✅ Causal inference 
 
@@ -338,6 +351,32 @@ https://github.com/baofff/Analytic-DPM 挺牛逼的，可能是score-based model
 > 现在这个diffusion model 太卷了！ 所有的baseline都要比，还是去做应用比较好！
 
 
+
+13. **MCMC SHOULD MIX: LEARNING ENERGY-BASED MODEL WITH NEURAL TRANSPORT LATENT SPACE MCMC** [pdf](https://openreview.net/pdf?id=4C93Qvn-tz) 
+
+> MCMC + EBM 那个路子，UCLA 朱松纯组的
+
+14. **A TALE OF TWO FLOWS: COOPERATIVE LEARNING OF LANGEVIN FLOW AND NORMALIZING FLOW TOWARD ENERGY-BASED MODEL**
+- [pdf](https://openreview.net/pdf?id=31d5RLCUuXC)
+
+> EBM + flow + langevin flow ，综合各种，但是太卷了，baseline要比很多
+
+
+15. **GATSBI: GENERATIVE ADVERSARIAL TRAINING FOR SIMULATION-BASED INFERENCE** [pdf](https://openreview.net/pdf?id=kR1hC6j48Tp) 
+
+>  simulation-based inference via GAN or other generative models 这个重点是simulation based
+
+
+16. **AUTOREGRESSIVE DIFFUSION MODEL** - [pdf](https://openreview.net/pdf?id=Lm8T39vLDTE) 
+
+> We introduce Autoregressive Diffusion Models (ARDMs), a model class encompassing and generalizing order-agnostic autoregressive models (Uria et al., 2014) and absorbing discrete diffusion (Austin et al., 2021),
+
+
+17. **REVISITING FLOW GENERATIVE MODELS FOR GROUPWISE OUT-OF-DISTRIBUTION DETECTION** -[pdf](https://openreview.net/pdf?id=6y2KBh-0Fd9)
+
+> 重新做flow for OOD， 用了two-points kolmogoro-smirnov 测试
+
+
 ### ✅ Multimodality (Vision, Speech, Lanuager, Graph)
 
 1. **data2vec: A General Framework for Self-supervised Learning in Speech, Vision and Language** - [Oral] [PDF](https://proceedings.mlr.press/v162/baevski22a.html)
@@ -425,7 +464,9 @@ https://github.com/baofff/Analytic-DPM 挺牛逼的，可能是score-based model
 > stefano Ermon 组的工作，偏理论，解决difference between two distributions 然后应用到climate change problem 
 
 
+2. **BRIDGING THE GAP: PROVIDING POST-HOC SYMBOLIC EXPLANATIONS FOR SEQUENTIAL DECISION-MAKING PROBLEMS WITH INSCRUTABLE REPRESENTATIONS** [pdf](https://openreview.net/pdf?id=o-1v9hdSult)
 
+> 比较复杂，看不出来做了什么， 估计没有code 
 
 ### ✅ NLP 
 
@@ -434,59 +475,33 @@ https://github.com/baofff/Analytic-DPM 挺牛逼的，可能是score-based model
 > 用stochastic process 去model 语言， 挺solid的paper 
 
 
+### ✅ Active learning + BOED + data augumentation 
 
-<!-- # Robustness and Uncertainty in NLP
-Robustness, uncertainty, safety and trustworthiness in deep learning, e.g., NLP, CV, multimodality
+1. **LOW-BUDGET ACTIVE LEARNING VIA WASSERSTEIN DISTANCE: AN INTEGER PROGRAMMING APPROACH**  [pdf](https://openreview.net/pdf?id=v8OlxjGn23S)
 
+> active learning 的新工作，比较理论
 
-### NLP important papers 
+2. **GENEDISCO: A BENCHMARK FOR EXPERIMENTAL DESIGN IN DRUG DISCOVERY** -[pdf](https://openreview.net/pdf?id=-w2oomO6qgc)
 
+> 主要是active learning + RL 之类的，做的benchmark，这个方向现在很火，但是可做的topic就这么几个！ 有code 在github
 
-| Read | Year | Name                                                         | Brief introduction                | Citation |   PDF link |
-| ------ | ---- | ------------------------------------------------------------ | ----------------------------- | ------------------------------------------------------------ |  ------- |
-| ✅ | 2017 | Transformer | Attentaion is all you need   | NeurIPS 2017 | [PDF](https://github.com/jxzhangjhu/Robustness-and-Uncertainty-in-NLP/blob/main/pdf/1706.03762.pdf) |  
+3. **WHAT MAKES BETTER AUGMENTATION STRATEGIES? AUGMENT DIFFICULT BUT NOT TOO DIFFERENT** - [pdf](https://openreview.net/pdf?id=Ucx3DQbC9GH)
 
+> NLP 的data augmentation 不知道是否好用
 
+4. **DISCREPANCY-BASED ACTIVE LEARNING FOR DOMAIN ADAPTATION** - [pdf](https://openreview.net/pdf?id=p98WJxUC3Ca) 
 
-### NLP tutorial 
-
-
-
-
-### UQ in Text classification 
-
-1. (KDD 2021) **Uncertainty-Aware Reliable Text Classification** [PDF](https://github.com/jxzhangjhu/Robustness-and-Uncertainty-in-NLP/blob/main/pdf/KDD2021.pdf)
-	> first apply evidential uncertainty (ENN) to text classification task; solve OOD detection tasks leveraging the OE method; three datasets (OE) are used as the benchmark; design adversarial examples
+> active learning for domain adaptation 现在active learning 各种新的东西出来，可能跟labeled data 有限有关
 
 
-1. (AAAI 2020) **Uncertainty-aware deep classifiers using generative models** [PDF]
 
 
-1. (NeurIPS 2019) **Can you trust your model's uncertainty? evaluating predictive uncertainty under dataset shift** [PDF]
+### ✅ optimal transport 
 
+1. **LOSSY COMPRESSION WITH DISTRIBUTION SHIFT AS ENTROPY CONSTRAINED OPTIMAL TRANSPORT** [pdf](https://openreview.net/pdf?id=BRFWxcZfAdC)
 
-1. (ICML 2020 UDL workshop) **Predictive uncertainty for probabilistic novelty detection in text classification** [PDF]
+> 这个optimal transport 感觉很多地方会用，ICLR的paper很多，这个和flow的区别？
 
+2. **OPTIMAL TRANSPORT FOR LONG-TAILED RECOGNITION WITH LEARNABLE COST MATRIX** - [pdf](https://openreview.net/pdf?id=t98k9ePQQpn)
 
-1. (AAAI 2019) **Quantifying uncertainties in natural language processing tasks** [PDF] 
-
-1. (COLING 2020) **Word-Level Uncertainty Estimation for Black-Box Text Classifiers using RNNs**
-
-1. (ACL 2020) **Uncertainty-aware curriculum learning for neural machine translation**
-
-1. (ACL 2022) **Uncertainty Estimation of Transformer Predictions for Misclassification Detection** 
-
-
-### Active learning (MC dropout) 
-
-1. (2017, Arxiv) **Deep active learning for named entity recognition**
-
-
-1. (2018, Arxiv) **Deep bayesian active learning for natural language processing: Results of a large-scale empirical study**
-
-
-### UQ method 
-
-
-1. (NeurIPS 2018) **Evidential deep learning to quantify classification uncertainty** [PDF](https://github.com/jxzhangjhu/Robustness-and-Uncertainty-in-NLP/blob/main/pdf/NeurIPS-2018-evidential-deep-learning-to-quantify-classification-uncertainty-Paper.pdf)
- -->
+> 算是应用！这种应用还是可以发出paper的
