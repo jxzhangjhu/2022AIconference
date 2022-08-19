@@ -243,6 +243,26 @@ Robustness to distribution shifts is critical for deploying machine learning mod
 
 > 这个非常interesting！ 这个如果有发展，的确是一个路子，还能熟悉transfomer 去做UQ， 是不是很多基础的问题都可以解决呢？
 
+37. **ANOMALY DETECTION FOR TABULAR DATA WITH INTERNAL CONTRASTIVE LEARNING** - [pdf](https://openreview.net/pdf?id=_hszZbt46bT)
+
+> AD还能发paper，这个就是做tabular data with internal contrastive learning的work，大量的benchmark，其实没什么意思， 给了6886挺高的分数了
+
+
+38. **BAYESIAN MODELING AND UNCERTAINTY QUANTIFICATION FOR LEARNING TO OPTIMIZE: WHAT, WHY, AND HOW** -[pdf](https://openreview.net/pdf?id=EVVadRFRgL7)
+
+> 本质还是优化，还是BO那套，不太明白为啥和UQ扯上
+
+
+39. **UNCERTAINTY MODELING FOR OUT-OF-DISTRIBUTION GENERALIZATION** [pdf](https://openreview.net/pdf?id=6HN7LHyzGgC)
+
+> 这个工作很有意思，仔细看看，最近的几个UQ的paper， 这个有code，看看有什么可以改进的！ 
+
+
+40. **ZERO-SHOT SELF-SUPERVISED LEARNING FOR MRI RECONSTRUCTION** [pdf](https://openreview.net/pdf?id=085y6YPaYjP)
+
+> 这个就非常专注MRI了，zero-slot 的idea， 挺不错的paper 做inverse reconstruction 
+
+
 
 ### ✅ Causal inference 
 
@@ -454,6 +474,15 @@ https://github.com/baofff/Analytic-DPM 挺牛逼的，可能是score-based model
 > GAM + neural 也算是增强可解释性！ paper写的挺好的，比较solid，找不出明显的问题
 
 
+4. **SYMBOLIC LEARNING TO OPTIMIZE: TOWARDS INTERPRETABILITY AND SCALABILITY** [pdf](https://openreview.net/pdf?id=ef0nInZHKIC)
+
+> 所谓的learning to optimize (L2O) 这个方向的，用symbolic learning 去增强interoretability and scalability 
+
+5. **SAFE NEUROSYMBOLIC LEARNING WITH DIFFERENTIABLE SYMBOLIC EXECUTION** [pdf](https://openreview.net/pdf?id=NYBmJN4MyZ)
+
+> differentiable neurosymbolic learning 这里面提到probabilistic symbolic 这个之前没听过， 有code，应用在一些safety-critic 
+
+
 ### ✅ Knowledge Graph 
 
 
@@ -477,6 +506,9 @@ https://github.com/baofff/Analytic-DPM 挺牛逼的，可能是score-based model
 
 ### ✅ Active learning + BOED + data augumentation 
 
+有一个ICML2022 workshop https://realworldml.github.io/  这个不错，挺多有意思的paper！ 
+
+
 1. **LOW-BUDGET ACTIVE LEARNING VIA WASSERSTEIN DISTANCE: AN INTEGER PROGRAMMING APPROACH**  [pdf](https://openreview.net/pdf?id=v8OlxjGn23S)
 
 > active learning 的新工作，比较理论
@@ -494,6 +526,14 @@ https://github.com/baofff/Analytic-DPM 挺牛逼的，可能是score-based model
 > active learning for domain adaptation 现在active learning 各种新的东西出来，可能跟labeled data 有限有关
 
 
+5. **COHERENCE-BASED LABEL PROPAGATION OVER TIME SERIES FOR ACCELERATED ACTIVE LEARNING** [pdf](https://openreview.net/pdf?id=gjNcH0hj0LM)
+
+> time series active learning 还是有不少人在做active learning 
+
+
+6. **AN EXPERIMENTAL DESIGN PERSPECTIVE ON MODEL-BASED REINFORCEMENT LEARNING** [pdf](https://openreview.net/pdf?id=0no8Motr-zO)
+
+> 这个是应用BOED到RL里面的，其实很多都可以借助BOED的方式去做！ 这个paper可以看看idea，但是没有code，肯定是很难reproduce！
 
 
 ### ✅ optimal transport 
@@ -505,3 +545,7 @@ https://github.com/baofff/Analytic-DPM 挺牛逼的，可能是score-based model
 2. **OPTIMAL TRANSPORT FOR LONG-TAILED RECOGNITION WITH LEARNABLE COST MATRIX** - [pdf](https://openreview.net/pdf?id=t98k9ePQQpn)
 
 > 算是应用！这种应用还是可以发出paper的
+
+3. **GENERATIVE MODELING WITH OPTIMAL TRANSPORT MAPS** [pdf](https://openreview.net/pdf?id=5JdLZg346Lw)
+
+> 这个paper挺有意思的，准备仔细看一下，optimal transport 和NF的关系之类的，这个paper挺好的一个启发！ 有code， 这个哥们都是自己干，挺有意思的
