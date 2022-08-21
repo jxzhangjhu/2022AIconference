@@ -549,3 +549,6 @@ https://github.com/baofff/Analytic-DPM 挺牛逼的，可能是score-based model
 3. **GENERATIVE MODELING WITH OPTIMAL TRANSPORT MAPS** [pdf](https://openreview.net/pdf?id=5JdLZg346Lw)
 
 > 这个paper挺有意思的，准备仔细看一下，optimal transport 和NF的关系之类的，这个paper挺好的一个启发！ 有code， 这个哥们都是自己干，挺有意思的
+
+
+
