@@ -262,6 +262,9 @@ Robustness to distribution shifts is critical for deploying machine learning mod
 
 > 这个就非常专注MRI了，zero-slot 的idea， 挺不错的paper 做inverse reconstruction 
 
+41. **NATURAL POSTERIOR NETWORK: DEEP BAYESIAN UNCERTAINTY FOR EXPONENTIAL FAMILY DISTRIBUTIONS** [pdf](https://openreview.net/forum?id=tV3N0DWMxCg)
+> 这个需要follow一下，看看能不能做点什么
+
 
 
 ### ✅ Causal inference 
