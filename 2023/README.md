@@ -23,3 +23,6 @@
 
 - Islands of Confidence: Robust Neural Network Classification with Uncertainty Quantification - [pdf](https://openreview.net/pdf?id=pNnXjO3q82)
 > very related, DUQ extended work, 
+
+- Dirichlet-based Uncertainty Calibration for Active Domain Adaptation  -[pdf](https://openreview.net/pdf?id=4WM4cy42B81)
+> need to read carefully! 
