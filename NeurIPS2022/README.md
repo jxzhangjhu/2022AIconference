@@ -14,11 +14,7 @@
 
 - Kossen, Jannik, Sebastian Farquhar, Yarin Gal, and Tom Rainforth. "Active Surrogate Estimators: An Active Learning Approach to Label-Efficient Model Evaluation." arXiv preprint arXiv:2202.06881 (2022). 
 
-> [code][https://github.com/jlko/active-surrogate-estimators] 
-
-> [link](https://arxiv.org/abs/2202.06881)
-
-> [slides](https://nips.cc/virtual/2022/poster/54273)
+> [code](https://github.com/jlko/active-surrogate-estimators), [link](https://arxiv.org/abs/2202.06881), [slides](https://nips.cc/virtual/2022/poster/54273)
 
 
 关于active learning的工作，oxford他们新的工作
