@@ -5,10 +5,9 @@
 
 possible keywords
 
-- uncertainty, calibrate, confidence/confident, reliable
-- diffusion
-- advice 
-- automation, decision making 
+topic 没有人做的？
+- generative model calibration, uncertainty for generative model
+
 
 
 ### ✅  Invited talk
@@ -87,7 +86,7 @@ topic 挺有意思的，关于CLIP的robustness
 ---
 
 ### Uncertainty 
-
+> uncertainty, calibrate, confidence/confident, reliable, advice, automation, decision making  
 
 - Ansari, Navid, Hans-Peter Seidel, Nima Vahidi Ferdowsi, and Vahid Babaei. "Autoinverse: Uncertainty Aware Inversion of Neural Networks." arXiv preprint arXiv:2208.13780 (2022). 
 > 就是之前NA那个方法的延续，也可以发出来？ 太扯了吧! 看主题！！！！太老的主题注定发不出来！
@@ -96,6 +95,101 @@ topic 挺有意思的，关于CLIP的robustness
 > [code](https://github.com/bat-sheva/conformal-learning) 
 
 这个用conformal的方法，现在还是挺多人用这个的！
+
+- Brophy, Jonathan, and Daniel Lowd. "Instance-Based Uncertainty Estimation for Gradient-Boosted Regression Trees." arXiv preprint arXiv:2205.11412 (2022). 
+> [slides](https://nips.cc/virtual/2022/poster/55260) 
+这个是orgen那个work，主要做regression的
+
+
+- Gruber, Sebastian Gregor, and Florian Buettner. "Better Uncertainty Calibration via Proper Scores for Classification and Beyond." In Advances in Neural Information Processing Systems. 
+> [slides](https://nips.cc/virtual/2022/poster/53262)
+偏理论，但是结合了calibration，uncertainty在classification and beyond
+
+
+- Wagh, Neeraj, Jionghao Wei, Samarth Rawal, Brent M. Berry, and Yogatheesan Varatharajah. "Evaluating Latent Space Robustness and Uncertainty of EEG-ML Models under Realistic Distribution Shifts." In Advances in Neural Information Processing Systems. 
+> [slides](https://nips.cc/virtual/2022/poster/52788)
+纯应用，但是可以看看大概做了啥？
+
+
+- UQGAN: A Unified Model for Uncertainty Quantification of Deep Classifiers trained via Conditional GANs. 
+> [slides](https://nips.cc/virtual/2022/poster/54777), [code](https://github.com/jxzhangjhu/UQGAN)
+这个可以仔细看看，如何讲这个story，比如做UQDiffusion 米有人做! topic有点陈旧，分不高，容易跪！
+
+
+- Scalable Sensitivity and Uncertainty Analyses for Causal-Effect Estimates of Continuous-Valued Interventions 
+> [slides](https://nips.cc/virtual/2022/poster/54488) 
+做causal的， from Gal group，之前不少工作比较系统！Andrew Jesson [google](https://scholar.google.com/citations?view_op=list_works&hl=en&hl=en&user=ElJ_fC4AAAAJ)
+
+
+- Nonparametric Uncertainty Quantification for Single Deterministic Neural Network 
+> [slides](https://nips.cc/virtual/2022/poster/53103)
+做nonparametric的，也是single DUQ类似的工作，可以看看，重点是分数怎么样，topic 能不能过？
+
+- On Uncertainty, Tempering, and Data Augmentation in Bayesian Classification 
+> [slides](https://nips.cc/virtual/2022/poster/52923)， [Code](https://github.com/activatedgeek/understanding-bayesian-classification) 
+NYU Andrew Wilson team 的work，还挺不错的，值得关注
+
+
+- JAWS: Auditing Predictive Uncertainty Under Covariate Shift
+> [slides](https://nips.cc/virtual/2022/poster/52881)
+covariate shift 的相关工作，值得关注一下！ JHU那个team的
+
+- Uncertainty Estimation for Multi-view Data: The Power of Seeing the Whole Picture  
+> [slides](https://openreview.net/forum?id=9WJU4Lu2KTX)
+偏应用，分数也有给的很低的，但是还是给accept了，选好AC挺重要的！看看有啥值得借鉴的不
+
+
+- Semantic uncertainty intervals for disentangled latent spaces 
+> [slides](https://nips.cc/virtual/2022/poster/53260)
+这个和generative model的结合，现在很想做这一块的东西！
+
+
+- Confidence-based Reliable Learning under Dual Noises
+> [slides](https://nips.cc/virtual/2022/poster/54109)
+清华Jun Zhu 他们的work，挺有意思的
+
+
+- Online Bipartite Matching with Advice: Tight Robustness-Consistency Tradeoffs for the Two-Stage Model 
+> [slides](https://nips.cc/virtual/2022/poster/52991) 
+这种paper特别多，比较容易过？ 偏金融，fianncial？ 
+
+
+- Pre-Trained Language Models for Interactive Decision-Making 
+> [slides](https://nips.cc/virtual/2022/poster/54484)
+这种decision making 的好多都和RL结合！
+
+
+
+
+--- 
+### Diffusion，或者和flow结合的？optimal transport 
+
+- Improving Diffusion Models for Inverse Problems using Manifold Constraints 
+> [slides](https://nips.cc/virtual/2022/poster/53565) 
+太多人做inverse了，已经挤不进去了
+
+
+- On Analyzing Generative and Denoising Capabilities of Diffusion-based Deep Generative Models 
+> [slides](https://nips.cc/virtual/2022/poster/53410)
+这个看上去挺有意思的， 可以关注一下，现在主流diffusion 任务估计是太多了
+
+- Maximum Likelihood Training of Implicit Nonlinear Diffusion Model
+> [slides](https://nips.cc/virtual/2022/poster/53575)
+这个可以follow一下！
+
+- On Translation and Reconstruction Guarantees of the Cycle-Consistent Generative Adversarial Networks
+> [slides](https://nips.cc/virtual/2022/poster/54131)
+纯理论 Cycle Consistency Loss  
+
+- Mutual Information Divergence: A Unified Metric for Multimodal Generative Models 
+> [slides](https://nips.cc/virtual/2022/poster/55019)
+做metric，里面和CLIP结合的，做multimodal的
+
+
+---
+### Bayesian 
+
+
 
 
 ### controllable text generation
