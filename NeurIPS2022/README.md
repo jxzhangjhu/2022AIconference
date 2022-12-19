@@ -7,7 +7,7 @@ possible keywords
 
 topic 没有人做的？
 - generative model calibration, uncertainty for generative model
-
+- AI-driven decision making 
 
 
 ### ✅  Invited talk
@@ -51,6 +51,9 @@ topic 没有人做的？
 
 - Vodrahalli, Kailas, Tobias Gerstenberg, and James Zou. "Uncalibrated Models Can Improve Human-AI Collaboration." arXiv preprint arXiv:2202.05983 (2022). 
 > [slides](https://nips.cc/virtual/2022/poster/53892), [paper](https://arxiv.org/abs/2202.05983), [code](https://github.com/kailas-v/human-ai-interactions)
+这个james zou 的工作挺有意思的 https://www.james-zou.com/ 
+
+
 
 
 - Yu, Yaodong, Stephen Bates, Yi Ma, and Michael I. Jordan. "Robust Calibration with Multi-domain Temperature Scaling." arXiv preprint arXiv:2206.02757 (2022).
